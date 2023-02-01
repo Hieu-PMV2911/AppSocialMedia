@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginStart="10dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_default_img_foreground"
+        android:layout_marginTop="3dp"
+        android:id="@+id/story_photo"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#000"/>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_add_black"
+        android:id="@+id/story_photo_seen"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/story_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLines="1"
+        android:text="Tên"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorBlack" />
+
+</LinearLayout>

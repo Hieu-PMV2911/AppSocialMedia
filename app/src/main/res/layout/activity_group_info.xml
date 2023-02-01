@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/groupIconTv"
+                android:minHeight="300dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/pDescriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/createByTv"
+                android:text="the desc"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="#54000000"/>
+
+            <TextView
+                android:id="@+id/createByTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#54000000"
+                android:paddingBottom="5dp"
+                android:text="Tao boi abc, on 12/21/2222"
+                android:textSize="12sp"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/editGroupTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_editgroup_black"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="Chỉnh Sửa Nhóm"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+        <TextView
+            android:id="@+id/addParticipantTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm Thành Viên"
+            android:drawableStart="@drawable/ic_add_participant_black"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+        <TextView
+            android:id="@+id/leaveGroupTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rời Nhóm"
+            android:drawableStart="@drawable/ic_exitgroup_black"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:textColor="#000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+        <TextView
+            android:id="@+id/participantTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thành Viên Trong Nhóm (N )"
+            android:padding="5dp"
+            android:drawableStart="@drawable/ic_group_white"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:textColor="#000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eee"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/participantRv"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_paticipant_add"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

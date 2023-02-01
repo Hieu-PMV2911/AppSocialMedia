@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "69178601933",
+    "firebase_url": "https://doanchuyennganh-13695-default-rtdb.firebaseio.com",
+    "project_id": "doanchuyennganh-13695",
+    "storage_bucket": "doanchuyennganh-13695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69178601933:android:21c428e635263c192dd484",
+        "android_client_info": {
+          "package_name": "com.example.doanchuyennganh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69178601933-j8o1ejmbv5kvo819h8dp60unq3n06dfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.doanchuyennganh",
+            "certificate_hash": "3237c4cf845b50e748e3fc96ac2e2fbaabd6695f"
+          }
+        },
+        {
+          "client_id": "69178601933-2unjdugb3r8aa2o0jp6dh02ueg0gotao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9SkrLQb3u_QFUIfxnhgCBDxUXJZPQFq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69178601933-2unjdugb3r8aa2o0jp6dh02ueg0gotao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

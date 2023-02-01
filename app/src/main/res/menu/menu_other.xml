@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_profile"
+        android:title="Trang Cá Nhân"
+        android:icon="@drawable/ic_profile_black_foreground"/>
+
+    <item android:id="@+id/nav_chatlits"
+        android:title="Nhóm Chat"
+        android:icon="@drawable/ic_group_primary"/>
+</menu>

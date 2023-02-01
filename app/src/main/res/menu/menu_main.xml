@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_logout"
+        android:title="Đăng Xuất"/>
+
+    <item android:id="@+id/action_setting"
+        android:title="Cài đặt"/>
+
+    <item android:id="@+id/action_add_post"
+        android:title="Đăng bài viết"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add_black"
+        />
+
+    <item android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Tìm Kiếm"/>
+
+    <item android:id="@+id/action_create_group"
+        android:title="Tạo nhóm"
+        android:icon="@drawable/ic_creategroup_white"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_add_participan"
+        android:title="Thêm vào nhóm"
+        android:icon="@drawable/ic_add_participant_black"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_groupInfo"
+        android:title="Thông tin nhóm"
+        android:icon="@drawable/ic_groupinfo_black"
+        app:showAsAction="always"/>
+
+</menu>

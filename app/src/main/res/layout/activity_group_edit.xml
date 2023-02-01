@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#eee"
+    tools:context=".GroupEditActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/groupIconIv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_group_primary" />
+
+    <EditText
+        android:id="@+id/groupTitleEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupIconIv"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:hint="Tên Nhóm"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/groupDescEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/groupTitleEt"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:gravity="top"
+        android:hint="Nội Dung Nhóm"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minHeight="100dp"
+        android:padding="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateGroupBtn"
+        android:src="@drawable/ic_done_white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

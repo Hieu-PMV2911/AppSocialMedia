@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/messageLayout"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            app:cardCornerRadius="50in">
+
+            <ImageView
+                android:id="@+id/avartarIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_img_chat"
+                android:textAlignment="center" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/messageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_receiver"
+            android:padding="15dp"
+            android:text="His Message"
+            android:visibility="gone"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/messageIv"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_imagechat_black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:id="@+id/timeIv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="02/03/2022 05:21PM"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/isSeenTv"
+            android:gravity="end"
+            android:visibility="gone"
+            android:textAlignment="textEnd"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
